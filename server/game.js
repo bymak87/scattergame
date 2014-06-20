@@ -2,7 +2,7 @@
 
 diceLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 categories = [];
-timer = 120;
+timer = 120; // <- demo 15 seconds|| 2 minute games -120
 
 var setGameInterval = function(gameId) {
   var game = Games.findOne(gameId),

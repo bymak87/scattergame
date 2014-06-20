@@ -1,4 +1,3 @@
-/* CSS declarations go here */
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
 
@@ -7,9 +6,17 @@
 #board,
 #judgment,
 #results {
+  font-family: 'Josefin Slab', serif;
   margin: 15px auto;
   max-width: 300px;
   width: 90%; }
+.btn-lg, .btn-group-lg > .btn{
+      font-size:25px;
+}
+.chat{
+
+  font-size: 20px;
+}
 
 @media (min-width: 1000px) {
   #board {
@@ -21,17 +28,15 @@
     width: 400px; } }
 #lobby .title {
   font-family: 'Lobster', cursive;
-  font-size: 65px;
+  font-size: 70px;
   margin-bottom: 15px;
   text-align: center; }
 #lobby .header {
-  font-family: 'Josefin Slab', serif;
   color: #555555;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 15px; }
 #lobby .sub-header {
-  font-family: 'Josefin Slab', serif;
   color: #555555;
   font-size: 20px;
   font-weight: bold;
@@ -39,60 +44,49 @@
 #lobby .room {
   color: blue; }
 #lobby #name-input {
-  font-family: 'Josefin Slab', serif;
   margin: 0 auto 25px;
   width: 100%; }
 #lobby #startgame {
-  font-family: 'Josefin Slab', serif;
   margin-bottom: 50px;
   width: 100%; }
 #lobby .player {
-  font-family: 'Josefin Slab', serif;
   font-size: 20px; }
 
 #ready {
-  text-align: center; }
+    text-align: center; }
   #ready .header {
-    font-family: 'Josefin Slab', serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold; }
   #ready .clock {
     color: blue;
-    font-family: 'Josefin Slab', serif;
     font-size: 42px;
     margin-bottom: 25px; }
   #ready .sub-header {
     color: #555555;
-    font-family: 'Josefin Slab', serif;
     font-size: 24px;
     font-weight: bold; }
   #ready .player {
     color: #888888;
-    font-family: 'Josefin Slab', serif;
     font-size: 18px;
     margin: 5px 0; }
 
+
 #board #categories {
-  font-family: 'Josefin Slab', serif;
   float: left;
   width: 75%; }
 #board #answers {
-  font-family: 'Josefin Slab', serif;
   float: right;
   width: 25%; }
 #board #board-info {
-  font-family: 'Josefin Slab', serif;
   font-size: 24px;
   font-weight: bold; }
 #board .letter {
-  font-family: 'Josefin Slab', serif;
   float: left;
   font-size: 30px;
   padding-right: 10px;
   text-align: right;
   width: 75%; }
 #board .clock {
-  font-family: 'Josefin Slab', serif;
   color: blue;
   float: right;
   font-size: 30px;
@@ -100,13 +94,11 @@
 #board .category, #board .answer {
   height: 40px; }
 #board .category {
-  font-family: 'Josefin Slab', serif;
   color: #555555;
   line-height: 40px;
   padding-right: 10px;
   text-align: right; }
 #board .answer input {
-  font-family: 'Josefin Slab', serif;
   height: 30px;
   margin: 5px 0;
   padding: 2px;
@@ -115,22 +107,16 @@
   #board #board-info {
     margin-bottom: 10px; }
   #board .letter {
-    font-family: 'Josefin Slab', serif;
     font-size: 36px; }
   #board .clock {
-    font-family: 'Josefin Slab', serif;
     font-size: 36px; }
   #board #categories {
-    font-family: 'Josefin Slab', serif;
     width: 50%; }
   #board #answers {
-    font-family: 'Josefin Slab', serif;
     width: 50%; }
   #board .letter {
-    font-family: 'Josefin Slab', serif;
     width: 50%; }
   #board .clock {
-    font-family: 'Josefin Slab', serif;
     width: 50%; }
   #board .category, #board .answer {
     height: 40px;
@@ -147,15 +133,14 @@
     width: 200px; } }
 
 #judgment {
-  font-family: 'Josefin Slab', serif;
   color: #888888; }
   #judgment .header {
     color: #000;
-    font-family: 'Josefin Slab', serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px; }
   #judgment .description {
+    font-size: 18px;
     margin-bottom: 10px; }
   #judgment .category {
     margin: 10px 0; }
@@ -180,21 +165,22 @@
     color: #555555;
     font-size: 20px;
     font-weight: bold; }
+
   @media (min-width: 1000px) {
     #judgment .category-answer:hover {
       text-decoration: line-through; } }
 
+
 #results .header {
-  font-family: 'Josefin Slab', serif;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px; }
 #results .answer-category {
-  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
   color: #555555;
   font-weight: bold; }
 #results .answer-entry {
-  font-family: 'Josefin Slab', serif;
+  font-size: 18px;
   color: #888888;
   margin-left: 20px; }
 #results .status-rejected, #results .status-duplicate {
@@ -202,12 +188,9 @@
 #results .status-accepted {
   color: green; }
 #results #return-to-lobby {
-  font-family: 'Josefin Slab', serif;
   width: 100%; }
 #results .result {
-  font-family: 'Josefin Slab', serif;
   margin-bottom: 25px; }
 #results .empty {
-  font-family: 'Josefin Slab', serif;
   color: #cccccc;
   font-style: italic; }

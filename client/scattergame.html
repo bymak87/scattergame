@@ -24,8 +24,10 @@
 
     <input type="text" id="name-input" class="form-control input-lg">
     <button id="startgame" class="btn btn-lg btn-success" disabled={{disabled}}>
+
       {{#if waiting}}Start Game{{else}}Play Solo{{/if}}
     </button>
+    <div class="chat"><a target="_blank" href="http://sc.meteor.com/"> >>Chat&lt;&lt; </a></div>
     <div class="other-players">
       {{#if room}}
       <div class="sub-header">Currently in room <span class="room">{{room}}</span></div>
@@ -91,7 +93,7 @@
 <template name="judgment">
   {{#if show}}
   <div id="judgment">
-    <div class="header">Judgment phase</div>
+    <div class="header">Judgment</div>
     {{#if waiting}}
     <div class="description">
       Waiting for the following players:
@@ -102,16 +104,17 @@
     {{else}}
     <div class="description">
       Answers for each category are listed below. <br>
-      Duplicate answers are marked in red <br><br>
+      Duplicate answers are marked in red <br>
+      Click on an answer to reject it.<br><br>
       Reject answers that <br>
       - don't match the category. <br>
       - don't start with the letter {{letter}}. <br>
       - duplicate other answers in the category. <br><br>
-      Click on an answer to reject it.
+
     </div>
     {{#constant}}
     {{#each categories}}
-    <div class="category" empty={{empty}} style="display: none;">
+    <div class="category" empty ={{empty}} >
       <div class="category-name">{{name}}</div>
       {{#each answers}}
       <div class="category-answer {{duplicateClass}}">{{value}}</div>

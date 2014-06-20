@@ -1,10 +1,10 @@
 ////////// Shared code (client and server) //////////
 
 Players = new Meteor.Collection('players');
-// {name: 'David', game_id: ...}
+// {name: 'Joe', game_id: ...}
 
 Games = new Meteor.Collection('games');
-// {categories: [...], clock: 180}
+// {categories: [...], clock: 160}
 
 newBoard = function() {
   var categorySet = {},

@@ -121,6 +121,9 @@ Template.board.clock = function() {
       clock = g && g.clock,
       min = Math.floor(clock / 60),
       sec = clock % 60;
+  if(clock < 11){
+    $('#board').css("background-color", "red");
+  }
 
   if (clock <= 0) {
     var answers = [];
@@ -361,5 +364,5 @@ Meteor.startup(function() {
   Meteor.setInterval(function() {
     if (Meteor.status().connected)
       Meteor.call('keepAlive', playerId);
-  }, 10*1000);
+  }, 5000);
 });
