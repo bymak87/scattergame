@@ -6,3 +6,6 @@ Tech Stack:
 * Meteor JS
 * HTML/CSS
 * Bootstrap
+
+Deployment Instructions:
+Can be played at http://scattergame.meteor.com/
